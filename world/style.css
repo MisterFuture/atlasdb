@@ -1,0 +1,97 @@
+body {
+  background-color: #222;
+  margin: 0 auto;
+}
+
+#button-container {
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    left: 55%;
+    top: 0%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2%;
+
+}
+
+.button {
+    display: block;
+    width: 45vw;
+    height: calc(100%/8);
+    margin: 2%;
+    border: none;
+    background-color: #555;
+    background-size: cover;
+    background-position: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Style the buttons on hover */
+.button:hover {
+    opacity: 0.8;
+  }
+  
+/* Set the background image for each button */
+#button-npc {
+background-image: url('/images/npc.jpg');
+}
+
+#button-objects {
+background-image: url('/images/objects.jpg');
+}
+
+#button-items {
+background-image: url('/images/items.jpg');
+}
+
+#button-spells-skills {
+background-image: url('/images/spells-skills.jpg');
+}
+
+#button-maps {
+background-image: url('/images/maps.jpg');
+}
+
+#button-quests {
+background-image: url('/images/quests.jpg');
+}
+
+#button-factions {
+background-image: url('/images/factions.jpg');
+}
+
+.previous-section-button {
+  /* add styles for the button */
+  position: absolute;
+  height: 100vh;
+  width: 4vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hwb(0 0% 100% / 0);
+  color: #fff;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previous-section-button:hover {
+  background-color: #555;
+}
+
+.previous-section-button img {
+  width: 1em;
+  height: 1em;
+  
+  vertical-align: middle;
+  /* Turns the icon white */
+  filter: invert(100%);
+}
