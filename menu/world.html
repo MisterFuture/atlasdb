@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" href="menu-style.css">
+    <script src="menu.js" defer></script>
+  </head>
+  <body>
+    <div class="menu-background" id="world-background"></div>
+  <!-- Navbar experiment, doesn't look too nice
+    <div class="navbar">
+      <button class="navbar-button"><img src="../feathericon/home.svg" alt="home"></button>
+      <button class="navbar-button"><img src="../feathericon/globe.svg" alt="home"></button>
+      <button class="navbar-button"><img src="../feathericon/users.svg" alt="home"></button>
+      <button class="navbar-button"><img src="../feathericon/user.svg" alt="home"></button>
+    </div>
+  -->
+    <div class="previous-menu" id="world-menu">World</div>
+    <div class="menu-container">
+      <button class="previous-section-button" onclick="window.location.href='../index.html'">
+        <img src="../feathericon/arrow-left.svg" alt="Previous Section">
+      </button>
+      <div id = 'card-container'>
+        <button class="card" id="card-npc" onclick="window.location.href='../browse/npc/npc.html'">NPCs</button>
+        <button class="card" id="card-objects">Objects</button>
+        <button class="card" id="card-items">Items</button>
+        <button class="card" id="card-spells-skills">Spells and Skills</button>
+        <button class="card" id="card-maps">Maps</button>
+        <button class="card" id="card-quests">Quests</button>
+    </div>
+  </div>
+
+  </body>
+</html>

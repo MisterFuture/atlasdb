@@ -1,0 +1,29 @@
+@import url(../home-style.css);
+
+.entity-table {
+    display: table;
+    width: 100%; /* fill the entire container */
+    border-collapse: collapse; /* optional: remove cell borders */
+  }
+  
+  .entity-table .row {
+    display: table-row;
+  }
+  
+  .entity-table .cell {
+    display: table-cell;
+    padding: 0.5em; /* optional: add some padding to the cells */
+    border: 1px solid #ccc; /* optional: add cell borders */
+  }
+  
+  /* optional: style the header row differently */
+  .entity-table .row.header {
+    font-weight: bold;
+    background-color: #eee;
+  }
+  
+  /* optional: style the first column differently */
+  .entity-table .cell:first-child {
+    width: 20%; /* optional: set a fixed width for the first column */
+    font-style: italic;
+  }

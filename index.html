@@ -2,31 +2,27 @@
 <html>
   <head>
     <title>ATLAS</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./home-style.css"/>
     <script src="./script.js" defer></script>
   </head>
   <body>
     <main>
       <h1>ATLAS</h1>
-      <button class="home-button">Home</button>
       <form>
         <input type="search" placeholder="Search" />
       </form>
       <i data-feather = "chevron-left"></i>
       <div class="button-container">
-        <button class="hbutton" data-section-target="#world" onclick="window.location.href='./world/world.html'">World</button>
-        <button class="hbutton" data-section-target="#characters" onclick="window.location.href='./characters/characters.html'">Characters</button>
-        <button class="hbutton" data-section-target="#accounts" onclick="window.location.href='./accounts/accounts.html'">Accounts</button>
+        <button class="home-button" data-section-target="#world" onclick="window.location.href='./menu/world.html'">World</button>
       </div>
-      <section class="home-section" id="world" hidden>
-        <h2>World</h2>
-      </section>
-      <section class="home-section" id="characters" hidden>
-        <h2>Characters</h2>
-      </section>
-      <section class="home-section" id="accounts" hidden>
-        <h2>Accounts</h2>
-      </section>
+      <div class="button-container">
+        <button class="home-button" data-section-target="#characters" onclick="window.location.href='./menu/characters.html'">Characters</button>
+        <button id="account-button" class="home-button" data-section-target="#accounts" onclick="window.location.href='./menu/account.html'">Account</button>
+      </div>
+      <div class="button-container">
+        <button class="account-button" id="login-button">Log in</button>
+        <button class="account-button" id="register-button">Register</button>
+      </div>
     </main>
   </body>
 </html>

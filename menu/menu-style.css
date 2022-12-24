@@ -1,0 +1,185 @@
+@import '../home-style.css';
+
+body {
+  background-color: #222;
+  margin: 0 auto;
+}
+
+.menu-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  filter: blur(10px);
+}
+
+.menu-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.63);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 8px;
+}
+
+#world-background {
+  background-image: url('https://wallpapercave.com/wp/wp11106933.jpg');
+  background-position: 82.5%;
+
+}
+
+.navbar {
+  position: absolute;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 5vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(34, 34, 34, 0.616);
+}
+
+.navbar-button {
+  position: relative;
+  width: 5vh;
+  height: 5vh;
+  margin: 1vmin;
+
+}
+
+.previous-menu {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 4vmax;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75em;
+  color: white;
+  background-color: rgba(34, 34, 34, 0.616);
+  text-align: center;
+  user-select: none;
+}
+
+.menu-container {
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  top: 0%;
+  right: 0%;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+.previous-section-button {
+  /* add styles for the button */
+  position: relative;
+  height: 100vh;
+  width: 4vw;
+  color: #fff;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  background: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previous-section-button:hover {
+  background-color: rgba(85, 85, 85, 0.438);
+  box-shadow: 0 0 8px rgba(146, 124, 63, 0.1);
+  
+}
+
+.previous-section-button img {
+  width: 1em;
+  height: 1em;
+  
+  vertical-align: middle;
+  /* Turns the icon white */
+  filter: invert(100%);
+}
+
+#card-container {
+  display: grid;
+  height: 100vh;
+  width: 45vw;
+  position: relative;
+  left: 10%;
+  top: -100%;
+  margin: -1.5%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+  height: 97%;
+  margin: 1.5%;
+  font-size: xx-large;
+  border: none;
+  background-color: #555;
+  background-size: cover;
+  background-position: center;
+  font-size: 2.5vmax;
+  color: #fff;
+  cursor: pointer;
+  padding: 1em;
+  box-shadow: 0 0 8px rgba(146, 124, 63, 0.1);
+  border-radius: 5px;
+  }
+
+  /* Style the cards on hover */
+.card:hover {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.582);
+  }
+.card:active {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.582);
+  }
+  
+/* Set the background image for each card */
+#card-npc {
+background-image: url('/images/npc.jpg');
+}
+
+#card-objects {
+background-image: url('/images/objects.jpg');
+}
+
+#card-items {
+background-image: url('/images/items.jpg');
+}
+
+#card-spells-skills {
+background-image: url('/images/spells-skills.jpg');
+}
+
+#card-maps {
+background-image: url('/images/maps.jpg');
+}
+
+#card-quests {
+background-image: url('/images/quests.jpg');
+}
+
+#card-factions {
+background-image: url('/images/factions.jpg');
+}
+

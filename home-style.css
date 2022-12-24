@@ -1,0 +1,86 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 16vmin;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    user-select: none;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  input[type="search"] {
+    flex: 1;
+    height: 10vmin;
+    padding: 0 20px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    font-size: 4vmin;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .home-button {
+    position: relative;
+    height: 20vmin;
+    width: 40vmin;
+    margin: 0 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 4vmin;
+    cursor: pointer;
+    outline: none;
+    flex-grow: 1;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  
+  .home-button:hover {
+    background-color: #444;
+  }
+  
+  .home-button:active {
+    background-color: #444;
+  }
+
+  #account-button {
+    display: none;
+  }
+
+
+ .account-button {
+  position: relative;
+  padding: 1%;
+  margin: 10px;
+  height: 7vmin;
+  width: 20vmin;
+  font-size: 4vmin;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+ }
