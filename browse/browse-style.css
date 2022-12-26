@@ -1,29 +1,51 @@
 @import url(../home-style.css);
 
-.entity-table {
-    display: table;
-    width: 100%; /* fill the entire container */
-    border-collapse: collapse; /* optional: remove cell borders */
-  }
-  
-  .entity-table .row {
-    display: table-row;
-  }
-  
-  .entity-table .cell {
-    display: table-cell;
-    padding: 0.5em; /* optional: add some padding to the cells */
-    border: 1px solid #ccc; /* optional: add cell borders */
-  }
-  
-  /* optional: style the header row differently */
-  .entity-table .row.header {
-    font-weight: bold;
-    background-color: #eee;
-  }
-  
-  /* optional: style the first column differently */
-  .entity-table .cell:first-child {
-    width: 20%; /* optional: set a fixed width for the first column */
-    font-style: italic;
-  }
+.browse-list {
+  position: absolute;
+  top: 20%;
+  border-collapse: collapse;
+  width: 90vw;
+  background-color: #333;
+}
+
+.browse-list th, td {
+  padding: 0.5em;
+  border: 1px solid #666;
+  width: auto;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 30vw;
+  user-select: none;
+}
+.browse-list th {
+  background-color: #444;
+}
+.browse-list td {
+  height: 45px;
+}
+.browse-list td p {
+  font-size: small;
+}
+
+.browse-list tr {
+  cursor: pointer;
+}
+.browse-list tr:nth-child(odd) {
+  background-color: #555;
+}
+
+.browse-list tr a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+tr:hover a {
+  color: #666;
+}
+tr:active a {
+  color: #666;
+}
